@@ -1,0 +1,42 @@
+body {
+    background-color:white;
+}
+
+.titulo {
+    color: yellowgreen;
+    font-size: 3em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.subtitulo {
+    color: red;
+    font-size: 2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.imagenes {
+    width: 25vw;
+    border: solid 5px black;
+    padding: 3vw 3vw 3vw 3vw;
+}
+
+#hola {
+    padding-left: 10vw;
+}
+
+.imagenes:hover{
+    border-radius: 15;
+    background-color: blue;
+}
+
+a:hover {
+    background-color: darkgreen;
+    transition: 700ml
+    ;
+}
+
+p {
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.3em;
+}
