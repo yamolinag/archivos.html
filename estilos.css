@@ -6,18 +6,33 @@ body {
     color: yellowgreen;
     font-size: 3em;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0vw 0vw 5vw 0vw;
+    
 }
 
 .subtitulo {
     color: red;
     font-size: 2em;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0vw 0vw 2vw 0vw;
+    
 }
 
 .imagenes {
     width: 25vw;
     border: solid 5px black;
     padding: 3vw 3vw 3vw 3vw;
+}
+
+#Auronplay {
+    display: flex;
+    border: solid black 5px;
+    border-radius: 15;
+    width: 80vw;
+    margin: 0vw 2vw 0vw 3vw;
+    padding: 5vw;
+    justify-content: center;
+
 }
 
 #hola {
