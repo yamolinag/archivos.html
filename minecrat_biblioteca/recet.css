@@ -1,0 +1,67 @@
+/* ============================================
+  Modern CSS Reset
+  ============================================
+*/
+
+/* 1. Usa un box-sizing más intuitivo en todos los elementos.
+  Con border-box, el padding y el borde se incluyen en el ancho y alto total del elemento,
+  lo que facilita mucho los cálculos de layout.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Elimina los márgenes por defecto de la mayoría de los elementos.
+  Esto evita los espacios en blanco inesperados.
+*/
+body, h1, h2, h3, h4, p, figure, blockquote, dl, dd, ul, ol {
+  margin: 0;
+}
+
+/* 3. Elimina los estilos de lista por defecto en los elementos <ul> y <ol> 
+  que tengan un atributo 'role="list"'. Esto es útil para listas que se usan para
+  navegación o layouts, no para contenido.
+*/
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+  padding: 0; /* También quitamos el padding que les pone el navegador */
+}
+
+/* 4. Configuración base para el <body>.
+  Establece una altura mínima de toda la pantalla y un comportamiento de scroll suave.
+*/
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* 5. Facilita el trabajo con imágenes.
+  Hacen que las imágenes no se desborden de su contenedor y se comporten como bloques.
+*/
+img, picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* 6. Heredar fuentes para los inputs y botones.
+  Por defecto, los elementos de formulario no heredan la tipografía del body,
+  con esto lo solucionamos.
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 7. Elimina las animaciones y transiciones para usuarios que así lo prefieren
+  por motivos de accesibilidad (prefers-reduced-motion).
+*/
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
